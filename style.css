@@ -44,6 +44,7 @@ header h1{
         #ffffff,
         #d8b4fe
     );
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
