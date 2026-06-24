@@ -1,9 +1,5 @@
 const projects = [
-    {
-        name: "MetroSmart AI",
-        description: "Proyecto desarrollado con JavaScript.",
-        url: "https://github.com/alejo-lopez09/MetroSmart-AI"
-    },
+    
     {
         name: "Base de Datos",
         description: "Repositorio relacionado con bases de datos.",
