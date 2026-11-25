@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro López | Portafolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <title>Alejandro López | Desarrollador de software junior</title>
+    <meta name="description" content="Portafolio de Alejandro López, desarrollador de software junior: aplicaciones web con JavaScript, backend con Java y Spring Boot, bases de datos MySQL y Git.">
+    <meta property="og:title" content="Alejandro López | Desarrollador de software junior">
+    <meta property="og:description" content="Proyectos con código, qué problema resuelve cada uno y qué aprendí construyéndolos.">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Alejandro López</h1>
-        <p>Desarrollador Junior | JavaScript | Python</p>
-
-        <a href="https://github.com/alejo-lopez09" target="_blank" class="btn">
-            Ver GitHub
-        </a>
+    <header class="top">
+        <a class="brand" href="#inicio">Alejandro López</a>
+        <nav aria-label="Principal">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#formacion">Formación</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
 
-    <section class="about">
-        <h2>Sobre mí</h2>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <p class="role">Desarrollador de software junior · Web y backend</p>
+                <h1>Alejandro López</h1>
+                <p class="objective">Busco una práctica o un primer empleo como desarrollador junior, donde pueda aportar en desarrollo web, backend con Java y bases de datos, y crecer dentro de un equipo.</p>
+                <div class="actions" id="hero-actions">
+                    <a class="btn" href="#proyectos">Ver proyectos</a>
+                </div>
+            </div>
+            <div id="photo-slot"></div>
+        </section>
 
-        <p>
-            Soy un desarrollador en formación apasionado por el desarrollo web,
-            la automatización y la inteligencia artificial. Me gusta crear
-            proyectos prácticos que resuelvan problemas reales y mejorar mis
-            habilidades constantemente.
-        </p>
-    </section>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="about">
+                <p>Estudio desarrollo de software y sistemas de bases de datos en Colombia. He construido aplicaciones web con HTML, CSS y JavaScript, herramientas de consola con Python y prácticas de backend con Java, Spring Boot y MySQL.</p>
+                <p>He trabajado en proyectos individuales y en equipo, desde un sistema de reservas para un hotel hasta un portal que consume una API pública. En equipo uso ramas con Git Flow y commits convencionales para mantener el código ordenado.</p>
+            </div>
+            <h3 class="sub">Fortalezas</h3>
+            <ul class="tags" id="strengths"></ul>
+        </section>
 
-    <section>
-        <h2>Proyectos</h2>
+        <section id="formacion">
+            <h2>Formación</h2>
+            <div id="education"></div>
+            <div id="courses-wrap" hidden>
+                <h3 class="sub">Cursos y certificaciones</h3>
+                <ul class="plain" id="courses"></ul>
+            </div>
+        </section>
 
-        <div class="projects" id="projects-container"></div>
-    </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p class="lead">Cada proyecto explica qué problema resuelve, con qué tecnologías se hizo y qué aprendí.</p>
+            <div id="projects-container"></div>
+            <h3 class="sub">Otros repositorios</h3>
+            <ul class="plain" id="others-container"></ul>
+        </section>
 
-    <section class="skills">
-        <h2>Tecnologías</h2>
+        <section id="habilidades">
+            <h2>Habilidades técnicas</h2>
+            <div class="skills" id="skills-container"></div>
+        </section>
 
-        <div class="skill-list">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Git</span>
-            <span>GitHub</span>
-        </div>
-    </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Estoy abierto a prácticas, proyectos y oportunidades junior. Escríbeme o revisa mi código en GitHub.</p>
+            <div class="actions" id="contact-links"></div>
+        </section>
+    </main>
 
-    <footer>
-        <p>© 2026 Alejandro López</p>
-    </footer>
-
+    <noscript><p style="padding:24px">Este portafolio necesita JavaScript para mostrar los proyectos. Mi código está en <a href="https://github.com/alejo-lopez09">github.com/alejo-lopez09</a>.</p></noscript>
+    <footer><p>© 2026 Alejandro López</p></footer>
     <script src="script.js"></script>
-
 </body>
-
 </html>
